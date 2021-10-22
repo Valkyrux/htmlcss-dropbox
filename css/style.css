@@ -67,7 +67,7 @@ header .logo-container img{
     line-height: 50px;
 }
 
-li {
+nav li {
     float: left;
 }
 
@@ -86,7 +86,7 @@ nav ul li a:hover{
 /* button */
 .btn {
     word-spacing: 0.05em;
-    padding: 0 1.2em;
+    padding: 0 1.3em;
     font-size: 0.8em;
     background-color: var(--blue);
     color: white;
@@ -100,16 +100,16 @@ nav ul li a:hover{
 .btn:hover {
     background-color: var(--blue-2);
     transform: scale(120%);
-    line-height: 1.8em;
+    line-height: 1.78em;
     border: 2px solid transparent;
 }
-
+/* riemptimento sotto la barra na */
 body::before{
     content: "";
     display: block;
     height: 50px;
 }
-
+/* jumbo settimgs */
 .jumbo {
     background-color: var(--light-blue);
 }
@@ -119,14 +119,14 @@ body::before{
     margin: auto;
     padding: 80px 0;
 }
-
+/* jumbo h1 */
 .jumbo-container h1 {
     font-size: 3.5em;
-    line-height: 1.5em;
+    line-height: 1.52em;
     font-weight: 800;
     margin-bottom: 0.5em;
 }
-
+/* jumbo colums setting */
 .jumbo-col {
     float: left;
     width: 65%;
@@ -136,7 +136,7 @@ body::before{
 .jumbo-col:first-of-type {
     width: 35%;
 }
-
+/* text column */
 .jumbo-col p {
     font-size: 0.8em;
     line-height: 1.5em;
@@ -146,11 +146,25 @@ body::before{
     margin-top: 0.5em;
 }
 
+.jumbo-col p:nth-child(3) {
+    font-size: 0.72em;
+    margin-bottom: 2.5em;
+}
 
-
+.jumbo-col .arrow {
+    font-size: 2em;
+    color: black;
+}
+/* image column */
 .jumbo-col img{
     width: 100%;
     position: absolute;
+}
+
+/* row */
+.row {
+    width: 70%;
+    margin: auto;
 }
 
 
