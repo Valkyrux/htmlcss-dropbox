@@ -24,7 +24,84 @@ html {
     font-family: open-sans, sans-serif;
 }
 
-li {
-    list-style-type: none;
+header {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
+
+header li a{
+    padding: 2em 0;
+    margin: 0 0.8em;
+    display: block;
+    font-size: 0.8em;
+    line-height: 100%;
+    color: black;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+.user-area li:first-child{
+    margin-right: 2em;
+}
+
+header nav {
+    display: table;
+    width: 100%;
+}
+/* head logo */
+header .logo-container img{
+    object-fit: contain;
+    max-width: 100%;
+    vertical-align: middle;
+}
+/* nav lists */
+.nav-col:first-child {
+    width: 16%;
+}
+
+.nav-col:last-child ul{
+    float: right;
+}
+
+.nav-col {
+    width: 42%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.info li {
+    list-style-type: none;
+    float: left;
+}
+
+.user-area li {
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.btn {
+    padding: 0.9em 1.2em;
+    background-color: var(--blue);
+    color: white;
+    line-height: 100%;
+}
+
+/* aggiustare l'altezza del button */
+.user-area li:first-child {
+    margin-top: 13px;
+}
+
+
+
+
+
 
