@@ -1,0 +1,14 @@
+/* palette */
+:root{
+    --light-blue:#B4D0E7;
+    --blue: #0061ff;
+    --blue-2: #3b86ff;
+    --purple: #61082b;
+    --light-gray: #f5f5f5;
+}
+/* basic layout */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

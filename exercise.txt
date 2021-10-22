@@ -1,0 +1,16 @@
+Esercizio:
+cartella/repo htmlcss-dropbox
+Descrizione
+Riproduciamo il layout come da screenshot (che rimane il nostro riferimento principale) cercando di essere il più fedeli possibili.
+Analizziamo sempre prima il layout e scriviamo dei commenti per individuare le macroaree.
+Facciamo un passo alla volta e puntiamo alla semplicità.
+Usate lo screenshot e il video della lezione come riferimento. Il sito originale solo per i colori.
+Consigli:
+Procediamo sezione per sezione, solo se una sezione funziona passiamo a quella successiva
+Creiamo delle classi riutilizzabili individuando gli elementi ricorrenti nel layout, capendo quindi come e cosa possiamo centralizzare per rendere il nostro codice il più possibile semplice, pulito e quindi modificabile.
+Non lavoriamo ancora sul responsive, quindi la nostra pagina non deve adattarsi a tutti i possibili viewport.
+Usiamo una grandezza massima e minima per il body e usiamo un approccio adattivo
+BONUS
+Da fare quindi solo dopo
+Dropdown menù
+Faq apertura in hover
