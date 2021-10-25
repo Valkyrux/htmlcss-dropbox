@@ -178,10 +178,10 @@ nav ul li a:hover{
 /* row */
 .row {
     width: 67%;
-    margin: auto;
+    margin: 100px auto;
 }
 
-.subscription div>h2 {
+h2 {
     font-size: 2em;
     margin: 2em 0;
 }
@@ -222,7 +222,7 @@ nav ul li a:hover{
     padding-bottom: 60px;
 }
 
-.subscription h3 {
+h3 {
     font-size: 1.4em;
     font-weight: 700;
 }
@@ -326,13 +326,81 @@ nav ul li a:hover{
     font-size: 0.9em;
     font-weight: 600;
 }
+
 .enterprise .column p:nth-child(3){
     margin: 0;
     font-size: 0.73em;
 }
+/* partner */
+.partner-column {
+    width: 45%;
+    float: left;
+}
 
+.partner-column:first-child {
+    width: 55%;
+}
 
+.partner-column:nth-child(2) {
+    padding: 40px 0 0 40px;
+}
 
+.partner-column img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.partner-column p {
+    margin: 30px 0;
+    font-size: 0.85em;
+    line-height: 1.8em;
+
+}
+
+.btn.white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    line-height: 2.2em;
+    height: 2.2em;
+    font-size: 0.9em;
+}
+
+/* business */
+.grid-row {
+    margin: 60px 0;
+}
+
+.grid-row .cell {
+    width: calc(100% / 3 - 20px);
+    float: left;
+}
+
+.grid-row .cell:nth-child(2) {
+    margin: 0 30px;
+}
+
+.cell-img img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.grid-row .cell-text h3 {
+    margin-top: 20px;
+}
+.grid-row .cell-text p {
+    font-size: 0.9em;
+    margin: 30px 0;
+    line-height: 1.2em;
+}
+
+.grid-row .cell-text .underline {
+    text-decoration: underline;
+}
+
+/*  */
 
 
 
