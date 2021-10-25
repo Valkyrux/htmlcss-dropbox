@@ -176,11 +176,12 @@ nav ul li a:hover{
 
 /* row */
 .row {
-    width: 70%;
+    width: 67%;
     margin: auto;
 }
 
-.subscription h2{
+.subscription div>h2 {
+    font-size: 2em;
     margin: 2em 0;
 }
 
@@ -194,42 +195,113 @@ nav ul li a:hover{
 }
 
 .card {
-    width: calc(100% / 3 - 30px);
+    width: 30%;
     border: 1px solid lightgrey;
     display: table-cell;
 }
 
+.table-spacing {
+    content: "";
+    display: table-cell;
+}
+
 .card h4:first-child {
+    /* negative margin for border overlap */
+    margin: -1px;
     border: 1px solid lightgrey;
     text-align: center;
     height: 40px;
     line-height: 40px;
 }
 
-.card-content {
-    padding: 20px;
+.card h4 {
+    font-size: 0.9em;
+    font-weight: normal;
 }
 
+.card-content {
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.card-content h3 {
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.card-content .price {
+    font-size: 0.9em;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.card-content .price .duration-users {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: gray;
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 27px;
+}
+/* button on card */
+.card-content .btn {
+    font-size: 0.8em;
+    display: block;
+}
 /* lists on card */
 .card li {
     padding: 10px 0;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 
-.card li span{
+.card li span:not(.plus) {
     display: block;
     float: left;
-    width: calc(100% - 1.5em);
+    width: calc(100% - 1.2em);
 }
 
 .card li i {
     float: left;
-    width: 1.5em;
+    width: 1.2em;
 } 
 
 .card .features i {
     color: var(--blue);
+}
+
+.card .plus{
+    float: left;
+    margin-left: -5px;
+    margin-right:3px;
+    font-size: 9px;
+    vertical-align: text-top;
+    line-height: 100%;
+    width: 0;
 } 
+/* card link buy now */
+.card-content .buynow {
+    margin: 25px 0;
+    font-size: 0.8em;
+}
+
+.card-content .buynow span {
+    display: inline-block;
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.card-content .buynow a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+
+
 
 
 
