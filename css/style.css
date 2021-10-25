@@ -6,32 +6,16 @@
     --purple: #61082b;
     --light-gray: #f5f5f5;
 }
-/* basic layout */
+/* basic settings */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 html {
     font-size: 100%;
     font-family: open-sans, sans-serif;
-}
-
-header {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow: hidden;
 }
 
 li {
@@ -42,19 +26,47 @@ a {
     text-decoration: none;
 }
 
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* layout */
+/* header */
+header {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+    /* blank container under the nav bar  */
+body::before{
+    content: "";
+    display: block;
+    height: 50px;
+}
+
 header nav {
     width: 100%;
 }
-/* head logo */
+    /* head logo */
 header .logo-container img{
     object-fit: contain;
     max-width: 100%;
     vertical-align: middle;
+    margin-bottom: 2px;
 }
-/* nav lists */
-.nav-col:first-child,
+    /* nav bar columns */
+.nav-col:first-child {
+    width: 11%;
+}
+
 .nav-col:last-child {
-    width: 10%;
+    width: 7%;
 }
 
 .nav-col:nth-child(3) ul{
@@ -62,7 +74,7 @@ header .logo-container img{
 }
 
 .nav-col {
-    width: 40%;
+    width: 41%;
     float: left;
     line-height: 50px;
 }
@@ -72,7 +84,7 @@ nav li {
 }
 
 header a{
-    margin: 0 1.45em;
+    margin: 0 1.4em;
     display: inline-block;
     font-size: 0.8em;
     color: black;
@@ -93,25 +105,20 @@ nav ul li a:hover{
     line-height: 2em;
     height: 2em;
     display: inline-block;
-    vertical-align: middle;
     transition: 0.1s;
+    margin: auto;
 }
 
 .btn:hover {
     background-color: var(--blue-2);
     transform: scale(120%);
-    line-height: 1.78em;
+    line-height: 1.8em;
     border: 2px solid transparent;
-}
-/* riemptimento sotto la barra na */
-body::before{
-    content: "";
-    display: block;
-    height: 50px;
 }
 /* jumbo settimgs */
 .jumbo {
     background-color: var(--light-blue);
+    margin-bottom: 160px;
 }
 
 .jumbo-container {
@@ -155,7 +162,7 @@ body::before{
     font-size: 2em;
     color: black;
 }
-/* image column */
+/* jumbo image */
 .jumbo-col img{
     width: 100%;
     position: absolute;
@@ -166,6 +173,48 @@ body::before{
     width: 70%;
     margin: auto;
 }
+
+.subscription h2{
+    margin: 2em 0;
+}
+
+.subscription .radio-container {
+    margin: 2em 0;
+    vertical-align: middle;
+}
+
+.card {
+    width: calc(100% / 3 - 30px);
+}
+
+.card>* {
+    padding: 10px;
+}
+
+.card li {
+    padding: 10px 0;
+}
+
+/* .card .features li::before {
+    content: "\2714";
+    color: var(--blue);
+    display: block;
+    float: left;
+} */
+.card .features li span,i {
+    color: var(--blue);
+    display: block;
+    float: left;
+    width: 50%;
+} 
+
+
+.btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
 
 
 
