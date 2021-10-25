@@ -115,6 +115,12 @@ nav ul li a:hover{
     line-height: 1.8em;
     border: 2px solid transparent;
 }
+
+.btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
 /* jumbo settimgs */
 .jumbo {
     background-color: var(--light-blue);
@@ -182,37 +188,49 @@ nav ul li a:hover{
     margin: 2em 0;
     vertical-align: middle;
 }
+/* card layout */
+.card-container {
+    display: table; 
+}
 
 .card {
     width: calc(100% / 3 - 30px);
+    border: 1px solid lightgrey;
+    display: table-cell;
 }
 
-.card>* {
-    padding: 10px;
+.card h4:first-child {
+    border: 1px solid lightgrey;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
 }
 
+.card-content {
+    padding: 20px;
+}
+
+/* lists on card */
 .card li {
     padding: 10px 0;
+    font-size: 0.8em;
 }
 
-/* .card .features li::before {
-    content: "\2714";
-    color: var(--blue);
+.card li span{
     display: block;
     float: left;
-} */
-.card .features li span,i {
-    color: var(--blue);
-    display: block;
+    width: calc(100% - 1.5em);
+}
+
+.card li i {
     float: left;
-    width: 50%;
+    width: 1.5em;
 } 
 
+.card .features i {
+    color: var(--blue);
+} 
 
-.btn-container {
-    text-align: center;
-    margin: 20px 0;
-}
 
 
 
