@@ -107,6 +107,7 @@ nav ul li a:hover{
     display: inline-block;
     transition: 0.1s;
     margin: auto;
+    text-align: center;
 }
 
 .btn:hover {
@@ -205,16 +206,13 @@ nav ul li a:hover{
     display: table-cell;
 }
 
-.card h4:first-child {
+.subscription h4:first-child {
     /* negative margin for border overlap */
     margin: -1px;
     border: 1px solid lightgrey;
     text-align: center;
     height: 40px;
     line-height: 40px;
-}
-
-.card h4 {
     font-size: 0.9em;
     font-weight: normal;
 }
@@ -224,8 +222,7 @@ nav ul li a:hover{
     padding-bottom: 60px;
 }
 
-.card-content h3 {
-    margin-top: 10px;
+.subscription h3 {
     font-size: 1.4em;
     font-weight: 700;
 }
@@ -245,7 +242,7 @@ nav ul li a:hover{
     margin-bottom: 27px;
 }
 /* button on card */
-.card-content .btn {
+.subscription .btn {
     font-size: 0.8em;
     display: block;
 }
@@ -299,6 +296,44 @@ nav ul li a:hover{
 .features {
     margin-top: 20px;
 }
+/* enterprise section */
+.enterprise {
+    margin-top: 40px;
+}
+
+.enterprise h4:first-child {
+    margin: 0;
+}
+
+.enterprise .clearfix {
+    width: 100%;
+    padding: 26px 20px;
+    border: 1px solid lightgrey;
+    margin-top: -1px;
+}
+
+.enterprise .column:first-child{
+    width: 70%;
+    float: left;
+}
+.enterprise .column:nth-child(2){
+    width: 30%;
+    float: left;
+}
+
+.enterprise .column p:nth-child(2){
+    margin: 12px 0 24px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.enterprise .column p:nth-child(3){
+    margin: 0;
+    font-size: 0.73em;
+}
+
+
+
+
 
 
 
