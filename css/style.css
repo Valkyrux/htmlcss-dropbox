@@ -432,12 +432,44 @@ img {
     width: 50%;
     height: 200px;
     float: left;
-    background-color: red;
     position: relative;
 }
 
 .review .art-container {
     padding: 10%;
+}
+
+.mark-container.green {
+    background-color: #a2d39b;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.mark-container.purple {
+    background-color: var(--purple);
+}
+
+.mark-container.blue {
+    background-color: var(--blue);
+}
+
+.mark-container.red {
+    background-color: #ff1c1c;
+}
+
+.mark-container.red2 {
+    background-color: #d5001f;
+}
+
+.mark-container.lightblue {
+    background-color: var(--light-blue);
+}
+
+.mark-container.oceanblue {
+    background-color: #0d2481;
+}
+
+.mark-container.yellow {
+    background-color: #ffd830;
 }
 
 
