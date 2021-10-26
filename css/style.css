@@ -60,6 +60,7 @@ header .logo-container img{
     max-width: 100%;
     vertical-align: middle;
     margin-bottom: 2px;
+    display: inline-block;
 }
     /* nav bar columns */
 .nav-col:first-child {
@@ -416,7 +417,7 @@ img {
     width: 40%;
     overflow: scroll;
     background-color: var(--light-gray);
-    height: 400px;
+    /* height: 400px; */
 }
 /* central column */
 .our-customer .mark-space {
@@ -429,7 +430,7 @@ img {
 
 .mark-row .mark-container {
     width: 50%;
-    height: 100%;
+    height: 200px;
     float: left;
     background-color: red;
     position: relative;
