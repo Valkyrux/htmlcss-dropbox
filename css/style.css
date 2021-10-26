@@ -489,7 +489,7 @@ img {
     width: 70%;
     margin: 0;
     color: var(--purple);
-    padding-right: 200px;
+    padding-right: 100px;
 }
 
 .take-dropbox .row.clearfix>.btn-container {
@@ -501,8 +501,55 @@ img {
     display: block;
     border: 0;
 }
+/* faq */
+.faq-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 38px;
+}
 
+.faq li {
+    border-top: 1px solid lightgray ;
+    border-bottom: 1px solid lightgray ;
+    margin: -1px 0;
+    padding: 25px;
+    font-size: 0.9em;
+}
 
+.faq li .clearfix {
+    width: 100%;
+}
+
+.faq .question {
+    float: left;
+    font-weight: 700;
+}
+
+.faq .arrow {
+    float: right;
+    position: relative;
+}
+
+.faq .answer {
+    background-color: var(--light-gray);
+    margin-top: 50px;
+    padding: 20px;
+    display: none;
+}
+
+.faq li:hover .answer {
+    display: block;
+}
+/* arrow */
+.faq li .arrow i:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.faq li:hover .arrow i:nth-child(2) {
+    display: none;
+}
 
 
 
