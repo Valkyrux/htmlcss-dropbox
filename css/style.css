@@ -417,7 +417,7 @@ img {
     width: 40%;
     overflow: scroll;
     background-color: var(--light-gray);
-    /* height: 400px; */
+    height: 400px;
 }
 /* central column */
 .our-customer .mark-space {
@@ -436,9 +436,9 @@ img {
     position: relative;
 }
 
-.mark-row .mark-container svg {
+.review .art-container {
+    padding: 10%;
 }
-
 
 
 
