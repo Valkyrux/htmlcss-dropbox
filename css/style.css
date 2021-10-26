@@ -406,18 +406,19 @@ img {
     margin-top: 30px;
 }
 /* main coulumns */
-.our-customer{
+.our-customer {
     width: 100%;
 }
+
 .our-customer>* {
     float: left;
+    height: 30vw;
 }
 
 .our-customer .review {
     width: 40%;
     overflow: scroll;
     background-color: var(--light-gray);
-    height: 400px;
 }
 /* central column */
 .our-customer .mark-space {
@@ -425,15 +426,23 @@ img {
 }
 
 .mark-row {
-    height: 200px;
+    height: 50%;
 }
 
 .mark-row .mark-container {
     width: 50%;
-    height: 200px;
+    height: 100%;
     float: left;
-    position: relative;
+    line-height: 100%;
 }
+
+.mark-row .mark-container svg {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
 
 .review .art-container {
     padding: 10%;
@@ -441,7 +450,7 @@ img {
 
 .mark-container.green {
     background-color: #a2d39b;
-    border: 10px solid rgba(255, 255, 255, 0.5);
+    border: 20px solid rgba(255, 255, 255, 0.5);
 }
 
 .mark-container.purple {
@@ -489,7 +498,7 @@ img {
     width: 70%;
     margin: 0;
     color: var(--purple);
-    padding-right: 100px;
+    padding-right: 20%;
 }
 
 .take-dropbox .row.clearfix>.btn-container {
@@ -549,6 +558,10 @@ img {
 
 .faq li:hover .arrow i:nth-child(2) {
     display: none;
+}
+/* footer */
+footer {
+    background-color: black;
 }
 
 
