@@ -19,19 +19,35 @@ html {
     scroll-behavior: smooth;
 }
 
+h2 {
+    font-size: 2em;
+    margin: 2em 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+}    
+
 li {
     list-style-type: none;
-}
+}    
 
 a {
     text-decoration: none;
+}    
+
+.info-link {
+    color: var(--blue);
+    text-decoration: underline;
+    font-size: 0.8rem;
 }
 
 .clearfix {
     content: "";
     display: table;
     clear: both;
-}
+}    
 /* layout */
 /* header */
 header {
@@ -43,17 +59,17 @@ header {
     background-color: white;
     overflow: hidden;
     z-index: 1;
-}
+}    
     /* blank container under the nav bar  */
 body::before{
     content: "";
     display: block;
     height: 50px;
-}
+}    
 
 header nav {
     width: 100%;
-}
+}    
     /* head logo */
 header .logo-container img{
     object-fit: contain;
@@ -61,29 +77,29 @@ header .logo-container img{
     vertical-align: middle;
     margin-bottom: 2px;
     display: inline-block;
-}
+}    
     /* nav bar columns */
 .nav-col:first-child {
     width: 11%;
-}
+}    
 
 .nav-col:last-child {
     width: 7%;
-}
+}    
 
 .nav-col:nth-child(3) ul{
     float: right;
-}
+}    
 
 .nav-col {
     width: 41%;
     float: left;
     line-height: 50px;
-}
+}    
 
 nav li {
     float: left;
-}
+}    
 
 header a{
     margin: 0 1.4em;
@@ -91,12 +107,11 @@ header a{
     font-size: 0.8em;
     color: black;
     border: 2px solid transparent;
-}
-
+}    
 
 nav ul li a:hover{
     border-bottom: 2px solid black;
-}
+}    
 /* button */
 .btn {
     word-spacing: 0.05em;
@@ -110,48 +125,47 @@ nav ul li a:hover{
     transition: 0.1s;
     margin: auto;
     text-align: center;
-}
+}    
 
 .btn:hover {
     background-color: var(--blue-2);
     transform: scale(120%);
     line-height: 1.8em;
     border: 2px solid transparent;
-}
+}    
 
 .btn-container {
     text-align: center;
     margin: 20px 0;
-}
-
+}    
 /* jumbo settimgs */
 .jumbo {
     background-color: var(--light-blue);
     margin-bottom: 160px;
-}
+}    
 
 .jumbo-container {
     width: 82%;
     margin: auto;
     padding: 80px 0;
-}
+}    
 /* jumbo h1 */
 .jumbo-container h1 {
     font-size: 3.5em;
     line-height: 1.52em;
     font-weight: 800;
     margin-bottom: 0.5em;
-}
+}    
 /* jumbo colums setting */
 .jumbo-col {
     float: left;
     width: 65%;
     position: relative;
-}
+}    
 
 .jumbo-col:first-of-type {
     width: 35%;
-}
+}    
 /* text column */
 .jumbo-col p {
     font-size: 0.8em;
@@ -160,53 +174,47 @@ nav ul li a:hover{
     font-weight: 600;
     margin-bottom: 1.5em;
     margin-top: 0.5em;
-}
+}    
 
 .jumbo-col p:nth-child(3) {
     font-size: 0.72em;
     margin-bottom: 2.5em;
-}
+}    
 
 .jumbo-col .arrow {
     font-size: 2em;
     color: black;
-}
+}    
 /* jumbo image */
 .jumbo-col img{
     width: 100%;
     position: absolute;
-}
-
+}    
 /* row */
 .row {
     width: 67%;
     margin: 100px auto;
-}
-
-h2 {
-    font-size: 2em;
-    margin: 2em 0;
-}
-
+}    
+/* radio */
 .subscription .radio-container {
     margin: 2em 0;
     vertical-align: middle;
-}
+}    
 /* card layout */
 .card-container {
     display: table; 
-}
+}    
 
 .card {
     width: 30%;
     border: 1px solid lightgrey;
     display: table-cell;
-}
+}    
 
 .table-spacing {
     content: "";
     display: table-cell;
-}
+}    
 
 .subscription h4:first-child {
     /* negative margin for border overlap */
@@ -217,23 +225,18 @@ h2 {
     line-height: 40px;
     font-size: 0.9em;
     font-weight: normal;
-}
+}    
 
 .card-content {
     padding: 20px;
     padding-bottom: 60px;
-}
-
-h3 {
-    font-size: 1.4em;
-    font-weight: 700;
-}
+}    
 
 .card-content .price {
     font-size: 0.9em;
     font-weight: 700;
     margin: 15px 0;
-}
+}    
 
 .card-content .price .duration-users {
     font-size: 0.8em;
@@ -242,32 +245,32 @@ h3 {
     display: block;
     padding-top: 10px;
     margin-bottom: 27px;
-}
+}    
 /* button on card */
 .subscription .btn {
     font-size: 0.8em;
     display: block;
-}
+}    
 /* lists on card */
 .card li {
     padding: 10px 0;
     font-size: 0.75em;
-}
+}    
 
 .card li span:not(.plus) {
     display: block;
     float: left;
     width: calc(100% - 1.2em);
-}
+}    
 
 .card li i {
     float: left;
     width: 1.2em;
-} 
+}     
 
 .card .features i {
     color: var(--blue);
-}
+}    
 
 .card .plus{
     float: left;
@@ -277,24 +280,18 @@ h3 {
     vertical-align: text-top;
     line-height: 100%;
     width: 0;
-} 
+}     
 /* card link buy now */
 .card-content .buynow {
     margin: 25px 0;
     font-size: 0.8em;
-}
+}    
 
 .card-content .buynow span {
     display: inline-block;
     padding-bottom: 25px;
     border-bottom: 1px solid lightgrey;
-}
-
-.info-link {
-    color: var(--blue);
-    text-decoration: underline;
-    font-size: 0.8rem;
-}
+}    
 
 .features {
     margin-top: 20px;
@@ -352,7 +349,6 @@ h3 {
     margin: 30px 0;
     font-size: 0.85em;
     line-height: 1.8em;
-
 }
 
 .btn.white {
@@ -362,6 +358,7 @@ h3 {
     line-height: 2.2em;
     height: 2.2em;
     font-size: 0.9em;
+    overflow: hidden;
 }
 
 /* business */
@@ -563,6 +560,34 @@ img {
 footer {
     background-color: black;
 }
+footer * {
+    color: var(--light-gray)
+}
+
+footer .row {
+    width: 80%;
+    margin: 0 auto;
+    padding: 85px 0;
+}
+
+footer .row.language {
+    padding: 20px 0;
+}
+
+footer h4 {
+    margin-bottom: 16px;
+}
+
+.dropbox-info .info-container {
+    width: 20%;
+    float: left;
+}
+
+.dropbox-info .info-container li a {
+    font-size: 0.75em;
+    line-height: 2em;
+}
+
 
 
 
