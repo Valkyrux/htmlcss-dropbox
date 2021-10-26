@@ -471,6 +471,38 @@ img {
 .mark-container.yellow {
     background-color: #ffd830;
 }
+/* take-dropbox */
+.take-dropbox {
+    background-color: var(--light-blue);
+}
+
+.take-dropbox .row {
+    margin-top: 0;
+    padding: 100px 0;
+}
+
+.take-dropbox .row.clearfix>* {
+    float: left;
+}
+
+.take-dropbox .row.clearfix>h2 {
+    width: 70%;
+    margin: 0;
+    color: var(--purple);
+    padding-right: 200px;
+}
+
+.take-dropbox .row.clearfix>.btn-container {
+    width: 30%;
+    margin: 0;
+}
+
+.take-dropbox .row.clearfix>.btn-container .btn{
+    display: block;
+    border: 0;
+}
+
+
 
 
 
